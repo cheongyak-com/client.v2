@@ -24,10 +24,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${notoSans.className}`}>
-        <Header />
-        <main>{children}</main>
-        <Footer />
-        <GlobalNavigationBar />
+        <div id="layout">
+          <div id="layout__container">
+            <Header />
+            <main id="layout__main">{children}</main>
+            <Footer />
+          </div>
+          <GlobalNavigationBar />
+        </div>
       </body>
     </html>
   );

@@ -1,0 +1,29 @@
+.header {
+  padding: 8px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+
+  @media screen and (width < 1024px) {
+    display: none;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 32px;
+  line-height: 1;
+}
+
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navigation__list {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  list-style: none;
+}
