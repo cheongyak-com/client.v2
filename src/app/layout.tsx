@@ -1,15 +1,16 @@
 import React from 'react';
 import type { Metadata } from 'next';
-import { Noto_Sans_KR } from 'next/font/google';
-import { Footer } from '@/app/_component/Footer';
-import { GlobalNavigationBar } from '@/app/_component/GlobalNavigationBar';
-import { Header } from '@/app/_component/Header';
+import localFont from 'next/font/local';
 import '../theme/theme.css';
 import './globals.css';
+import { Header } from './_component/layout/Header';
+import { Footer } from './_component/layout/Footer';
+import { GlobalNavigationBar } from './_component/layout/GlobalNavigationBar';
 
-const notoSans = Noto_Sans_KR({
+const pretendard = localFont({
+  src: './_asset/font/PretendardVariable.woff2',
   display: 'swap',
-  subsets: ['latin'],
+  weight: '45 920',
 });
 
 export const metadata: Metadata = {
@@ -23,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${notoSans.className}`}>
+      <body className={`${pretendard.className}`}>
         <div id="layout">
           <div id="layout__container">
             <Header />

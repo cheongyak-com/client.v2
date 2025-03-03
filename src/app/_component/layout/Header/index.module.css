@@ -23,7 +23,7 @@
 
 .navigation__list {
   display: flex;
-  gap: 16px;
+  gap: 8px;
   align-items: center;
   list-style: none;
 }
