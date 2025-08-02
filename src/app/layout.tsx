@@ -15,6 +15,9 @@ const pretendard = localFont({
 
 export const metadata: Metadata = {
   title: '청약닷컴',
+  icons: {
+    icon: '/favicon.svg',
+  },
 };
 
 export default function RootLayout({
