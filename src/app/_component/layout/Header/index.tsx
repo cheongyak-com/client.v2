@@ -33,7 +33,7 @@ export const Header = () => {
       <nav className={styles['navigation']}>
         <ul className={styles['navigation__list']}>
           <li>
-            <Button variant="tertiary" href="/">
+            <Button variant="tertiary" href="/list">
               <List width={20} height={20} alt="List" />
             </Button>
           </li>

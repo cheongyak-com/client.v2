@@ -7,7 +7,7 @@
   position: sticky;
   top: 12px;
   background-color: var(--white-alpha-1000);
-  box-shadow: 0 0 8px 2px var(--black-alpha-50);
+  box-shadow: 0 0 4px 1px var(--black-alpha-100);
   width: 100%;
   max-width: 95dvw;
   margin: 12px auto 0;
