@@ -1,0 +1,79 @@
+.wrapper {
+  border-radius: 4px;
+  font-weight: 500;
+
+  &[data-size='small'] {
+    font-size: 12px;
+    padding: 2px 4px;
+  }
+
+  &[data-size='medium'] {
+    font-size: 14px;
+    padding: 4px 6px;
+  }
+
+  &[data-size='large'] {
+    font-size: 16px;
+    padding: 6px 8px;
+  }
+
+  &[data-color='gray'] {
+    &[data-variant='fill'] {
+      background-color: var(--gray-600);
+      color: var(--white-alpha-1000);
+    }
+
+    &[data-variant='tint'] {
+      background-color: var(--gray-200);
+      color: var(--gray-700);
+    }
+  }
+
+  &[data-color='blue'] {
+    &[data-variant='fill'] {
+      background-color: var(--blue-700);
+      color: var(--white-alpha-1000);
+    }
+
+    &[data-variant='tint'] {
+      background-color: var(--blue-100);
+      color: var(--gray-700);
+    }
+  }
+
+  &[data-color='yellow'] {
+    &[data-variant='fill'] {
+      background-color: var(--yellow-700);
+      color: var(--white-alpha-1000);
+    }
+
+    &[data-variant='tint'] {
+      background-color: var(--yellow-200);
+      color: var(--gray-700);
+    }
+  }
+
+  &[data-color='red'] {
+    &[data-variant='fill'] {
+      background-color: var(--red-700);
+      color: var(--white-alpha-1000);
+    }
+
+    &[data-variant='tint'] {
+      background-color: var(--red-200);
+      color: var(--gray-700);
+    }
+  }
+
+  &[data-color='green'] {
+    &[data-variant='fill'] {
+      background-color: var(--green-700);
+      color: var(--white-alpha-1000);
+    }
+
+    &[data-variant='tint'] {
+      background-color: var(--green-200);
+      color: var(--gray-700);
+    }
+  }
+}

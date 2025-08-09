@@ -1,3 +1,4 @@
+import { Tag } from '@/app/_component/common/Tag';
 import styles from './index.module.css';
 
 export const ListItem = () => {
@@ -6,9 +7,12 @@ export const ListItem = () => {
       <div className={styles.content}>
         <div className={styles.header}>
           <div className={styles.tags}>
-            <p className={styles.tag}>APT</p>
-            <p className={styles.tag}>국민</p>
-            <p className={styles.tag}>경기</p>
+            <Tag>청약예정</Tag>
+            <Tag color="blue">청약중</Tag>
+            <Tag color="yellow">오늘발표</Tag>
+            <Tag>APT</Tag>
+            <Tag>국민</Tag>
+            <Tag>경기</Tag>
           </div>
           <h3 className={styles.title}>왕숙 푸르지오 더 퍼스트 1단지 공공분양주택(본청약)</h3>
         </div>
