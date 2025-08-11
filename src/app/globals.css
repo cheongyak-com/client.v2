@@ -1,6 +1,5 @@
 html,
 body {
-  width: 100dvw;
   min-height: 100dvh;
   display: grid;
   color: var(--gray-900);
