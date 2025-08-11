@@ -1,5 +1,5 @@
 import React from 'react';
-import { objectToCssVariables } from '@/theme/util';
+import { objectToCssVariables } from '@/theme/_util';
 
 export const THEME_COLOR = {
   gray: {

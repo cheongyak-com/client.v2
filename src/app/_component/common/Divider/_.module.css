@@ -1,0 +1,26 @@
+.wrapper {
+  --divider-thickness: 1px;
+  --divider-length: 100%;
+  --divider-color: var(--gray-200);
+  --divider-margin: 0;
+
+  border: none;
+  padding: 0;
+  background-color: var(--divider-color);
+  margin: var(--divider-margin);
+
+  /* horizontal 방향 */
+
+  &[data-orientation='horizontal'] {
+    width: var(--divider-length);
+    height: var(--divider-thickness);
+  }
+
+  /* vertical 방향 (기본) */
+
+  &[data-orientation='vertical'] {
+    width: var(--divider-thickness);
+    height: var(--divider-length);
+    display: inline-block;
+  }
+}

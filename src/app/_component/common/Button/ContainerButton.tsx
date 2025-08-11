@@ -1,4 +1,4 @@
-import { parseDataValue } from './_util';
+import { parseDataValue } from '../_util';
 import styles from './_.module.css';
 import { ButtonProps } from './_type';
 

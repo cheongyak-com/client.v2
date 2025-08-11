@@ -1,4 +1,4 @@
-import { parseDataValue } from '@/app/_component/common/Button/_util';
+import { parseDataValue } from '../_util';
 import styles from './_.module.css';
 import { Props } from './_type';
 
