@@ -4,13 +4,53 @@
   align-items: center;
   gap: 4px;
   background: none;
-  padding: 4px;
   margin: 0;
   border: 1px solid transparent;
   text-decoration: none;
   cursor: pointer;
   border-radius: 12px;
   transition: 0.3s;
+  font-weight: 500;
+
+  &[data-size='small'] {
+    font-size: 13px;
+  }
+
+  &[data-size='medium'] {
+    font-size: 14px;
+  }
+
+  &[data-size='large'] {
+    font-size: 16px;
+  }
+
+  &[data-shape='icon'] {
+    &[data-size='small'] {
+      padding: 3px;
+    }
+
+    &[data-size='medium'] {
+      padding: 4px;
+    }
+
+    &[data-size='large'] {
+      padding: 4px;
+    }
+  }
+
+  &[data-shape='text'] {
+    &[data-size='small'] {
+      padding: 2px 6px;
+    }
+
+    &[data-size='medium'] {
+      padding: 4px 6px;
+    }
+
+    &[data-size='large'] {
+      padding: 4px 6px;
+    }
+  }
 
   &[data-variant='primary'] {
     background: var(--blue-700);

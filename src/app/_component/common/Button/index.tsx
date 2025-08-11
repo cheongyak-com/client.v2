@@ -4,7 +4,13 @@ import { Anchor } from './Anchor';
 import { ContainerButton } from './ContainerButton';
 
 export const Button = (props: Props) => {
-  const { variant = 'primary' } = props;
+  const { variant = 'primary', size = 'medium', shape = 'text' } = props;
 
-  return isAnchor(props) ? <Anchor {...props} variant={variant} /> : <ContainerButton {...props} variant={variant} />;
+  const commonProps = {
+    variant,
+    size,
+    shape,
+  };
+
+  return isAnchor(props) ? <Anchor {...props} {...commonProps} /> : <ContainerButton {...props} {...commonProps} />;
 };

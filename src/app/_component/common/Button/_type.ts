@@ -2,7 +2,8 @@ import React from 'react';
 import { UrlObject } from 'url';
 
 export type Common = {
-  size?: 'medium' | 'large';
+  shape?: 'icon' | 'text';
+  size?: 'small' | 'medium' | 'large';
   variant?: 'primary' | 'secondary' | 'tertiary' | 'error';
   disabled?: boolean;
   children: React.ReactNode;

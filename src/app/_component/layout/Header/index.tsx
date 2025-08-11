@@ -25,7 +25,7 @@ export const Header = () => {
   return (
     <header className={`${styles.header} ${isScrolled ? styles.scrolled : ''}`}>
       <h1 className={styles.logo}>
-        <Button variant="tertiary" href="/">
+        <Button variant="tertiary" size="large" href="/">
           <Logo alt="logo" width={20} height={20} />
           <p>청약닷컴</p>
         </Button>
@@ -33,7 +33,7 @@ export const Header = () => {
       <nav className={styles['navigation']}>
         <ul className={styles['navigation__list']}>
           <li>
-            <Button variant="tertiary" href="/list">
+            <Button variant="tertiary" size="large" shape="icon" href="/list">
               <List width={20} height={20} alt="List" />
             </Button>
           </li>
