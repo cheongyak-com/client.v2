@@ -1,9 +1,10 @@
+import Link from 'next/link';
 import { Tag } from '@/app/_component/common/Tag';
 import styles from './index.module.css';
 
 export const ListItem = () => {
   return (
-    <div className={styles.wrapper}>
+    <Link href="123" className={styles.wrapper}>
       <div className={styles.content}>
         <div className={styles.header}>
           <div className={styles.tags}>
@@ -22,6 +23,6 @@ export const ListItem = () => {
           <p>발표 2025-08-20</p>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };

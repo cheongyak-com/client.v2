@@ -1,0 +1,53 @@
+:global(body):has(.wrapper) {
+  --bg-image: var(--gray-200);
+  background: linear-gradient(180deg, var(--white-alpha-500) 0%, var(--white-alpha-1000) 100dvh), var(--bg-image);
+  background-size: cover, contain;
+  background-position: center, top;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.wrapper {
+  position: relative;
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 20px;
+}
+
+.header {
+  position: sticky;
+  top: 70px;
+  display: grid;
+  place-items: center;
+  gap: 16px;
+  padding: 40px 20px;
+}
+
+.tags {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.info {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.address {
+  font-size: 13px;
+  color: var(--gray-700);
+}
+
+.content {
+  z-index: 1;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: var(--white-alpha-1000);
+}
